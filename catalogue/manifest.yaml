@@ -21,9 +21,9 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-    project: roboshop
-    tier: backend
-    component: catalogue
+      project: roboshop
+      tier: backend
+      component: catalogue
   #pods
   template:
     metadata:
