@@ -39,10 +39,9 @@ metadata:
     component: mongodb
 spec:
   selector:
-    matchLabels:
-      project: roboshop
-      tier: db
-      component: mongodb
+    project: roboshop
+    tier: db
+    component: mongodb
   ports:
   - protocol: TCP
     port: 27017
