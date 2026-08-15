@@ -12,9 +12,9 @@ spec:
   replicas: 10
   selector:
     matchLabels:
-    project: roboshop
-    tier: db
-    component: mongodb
+      project: roboshop
+      tier: db
+      component: mongodb
   #pods
   template:
     metadata:
@@ -39,9 +39,10 @@ metadata:
     component: mongodb
 spec:
   selector:
-    project: roboshop
-    tier: db
-    component: mongodb
+    matchLabels:
+      project: roboshop
+      tier: db
+      component: mongodb
   ports:
   - protocol: TCP
     port: 27017
